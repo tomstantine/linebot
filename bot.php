@@ -17,8 +17,6 @@ if (!empty($bot->isEvents)) {
     }
 
 
-    echo "<pre>";
-    var_dump($bot->response);
 
     // Failed
     echo $bot->response->getHTTPStatus . ' ' . $bot->response->getRawBody(); 
