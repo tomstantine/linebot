@@ -21,6 +21,7 @@ if (!is_null($events['events'])) {
       $replyToken = $event['replyToken'];
 
       // Build message to reply back
+      $respTxt='';
       if($text=='สวัสดี'){
       	$respTxt='สวัสดีเหมือนกันจ๊ะ';
       }elseif($text=='เทพ'){
@@ -31,7 +32,7 @@ if (!is_null($events['events'])) {
 
       $messages = [
         'type' => 'text',
-        'text' => $respTxt;
+        'text' => $respTxt
       ];
 
       // Make a POST Request to Messaging API to reply to sender
