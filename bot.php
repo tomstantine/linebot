@@ -92,7 +92,7 @@ function resSimsimi($text=''){
     $arr = json_decode($json, true);
     if(empty($arr['response'])) {
         // This trial api will have less db. Use paid key for full db. I don't try so I don't know it worth or not?
-        $arr['response'] = "[Itom not response.]";
+        $arr['response'] = "ไม่บอก";
     }
 
     return $arr['response'];
