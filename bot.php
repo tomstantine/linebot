@@ -1,6 +1,8 @@
 
 <?php
-
+$access_token = 'iyzxmENf2gQ0OqPLPnqRCLhtiuQOJU/q/APRq1OhUA9V/UPF0gksiq5b4PPFfUic8vqmQKkcbjtA3M1R0a8wBGYOag4TQSPKNt2pUlSutwh7WX5rrququKSiQjRa7OCGR07u5e9xx9VrUrMxdAWcdwdB04t89/1O/w1cDnyilFU=';
+$proxy = 'proxyurl:http://fixie:QzdR7a5mSBt7FCC@velodrome.usefixie.com:80';
+$proxyauth = 'tomcs19@gmail.com:he123449';
 
 
 
@@ -92,6 +94,10 @@ function resSimsimi($text=''){
         // This trial api will have less db. Use paid key for full db. I don't try so I don't know it worth or not?
         $arr['response'] = "ไม่บอก";
     }
+    if( $arr['result'] =='509'){
+        $arr['response'] = "วันนี้ลูกพี่ให้ตอบได้แค่นี้ พุ่งนี้คุยกันใหม่"; 
+    }
+    
 
     return $arr['response'];
 
